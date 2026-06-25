@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'features/recruitment/recruitment_form_page.dart';
+import 'sign_up_page.dart';
 
 class EventPairApp extends StatelessWidget {
   const EventPairApp({super.key});
@@ -14,7 +14,7 @@ class EventPairApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
       ),
-      home: const RecruitmentFormPage(),
+      home: const SignUpPage(),
     );
   }
 }
