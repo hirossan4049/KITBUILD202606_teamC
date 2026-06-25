@@ -2,16 +2,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Flutter: iOS Simulator (Hot Reload)",
+      "name": "Flutter: Chrome (Hot Reload)",
       "request": "launch",
       "type": "dart",
       "program": "lib/main.dart",
       "flutterMode": "debug",
-      "preLaunchTask": "Boot iOS Simulator",
-      "deviceId": "1408BF6F-BC9F-4CB1-8B07-78FC62703B8D",
-      "env": {
-        "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
-      }
+      "deviceId": "chrome"
     }
   ]
 }
