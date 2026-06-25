@@ -8,3 +8,9 @@ build/
 coverage/
 
 ios/Flutter/ephemeral/
+
+# Local IDE / Flutter tool metadata
+.idea/
+*.iml
+.metadata
+firebase-debug.log
