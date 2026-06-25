@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'sign_up_page.dart';
+
 class EventPairApp extends StatelessWidget {
   const EventPairApp({super.key});
 
@@ -8,7 +10,11 @@ class EventPairApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Event Pair',
-      home: const Scaffold(body: Center(child: Text('サンプル'))),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        useMaterial3: true,
+      ),
+      home: const SignUpPage(),
     );
   }
 }
