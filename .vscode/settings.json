@@ -1,3 +1,4 @@
 {
-  "dart.flutterHotReloadOnSave": "allIfDirty"
+  "dart.flutterHotReloadOnSave": "all",
+  "dart.previewHotReloadOnSaveWatcher": true
 }
