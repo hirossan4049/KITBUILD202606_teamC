@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.example.day1FlutterBasics',
   );
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDjxMZ8aDldkhJTOayCywzMQQGeQky9xW0',
+    apiKey: '',
     appId: '1:652699892662:web:e43e7bde2e5bb363449f17',
     messagingSenderId: '652699892662',
     projectId: 'event-pair-sena-2026',
