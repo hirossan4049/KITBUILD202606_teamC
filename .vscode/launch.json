@@ -2,6 +2,22 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Flutter: iOS Simulator (Hot Reload)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "deviceId": "1408BF6F-BC9F-4CB1-8B07-78FC62703B8D",
+      "preLaunchTask": "iOS Simulator: Boot iPhone 17 Pro",
+      "toolArgs": [
+        "--device-timeout",
+        "60"
+      ],
+      "env": {
+        "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
+      }
+    },
+    {
       "name": "Flutter: Chrome (Hot Reload)",
       "request": "launch",
       "type": "dart",

@@ -1,1 +1,43 @@
-{"flutter":{"platforms":{"ios":{"default":{"projectId":"event-pair-sena-2026","appId":"1:652699892662:ios:f29b6d16a48f1093449f17","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"event-pair-sena-2026","configurations":{"ios":"1:652699892662:ios:f29b6d16a48f1093449f17","web":"1:652699892662:web:e43e7bde2e5bb363449f17"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "ios": {
+        "default": {
+          "projectId": "event-matching-1c7e1",
+          "appId": "1:835122226704:ios:00402e8326ddb22fe30c95",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        },
+        "buildConfigurations": {
+          "Debug": {
+            "projectId": "event-matching-1c7e1",
+            "appId": "1:835122226704:ios:00402e8326ddb22fe30c95",
+            "uploadDebugSymbols": false,
+            "fileOutput": "ios/Runner/GoogleService-Info.plist"
+          },
+          "Release": {
+            "projectId": "event-matching-1c7e1",
+            "appId": "1:835122226704:ios:00402e8326ddb22fe30c95",
+            "uploadDebugSymbols": false,
+            "fileOutput": "ios/Runner/GoogleService-Info.plist"
+          },
+          "Profile": {
+            "projectId": "event-matching-1c7e1",
+            "appId": "1:835122226704:ios:00402e8326ddb22fe30c95",
+            "uploadDebugSymbols": false,
+            "fileOutput": "ios/Runner/GoogleService-Info.plist"
+          }
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "event-matching-1c7e1",
+          "configurations": {
+            "ios": "1:835122226704:ios:00402e8326ddb22fe30c95",
+            "web": "1:835122226704:web:f8000f081c3332b1e30c95"
+          }
+        }
+      }
+    }
+  }
+}

@@ -50,19 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDvdmiHeayhJZGpoTcL_-IkOJyWwge0asY',
-    appId: '1:652699892662:ios:f29b6d16a48f1093449f17',
-    messagingSenderId: '652699892662',
-    projectId: 'event-pair-sena-2026',
-    storageBucket: 'event-pair-sena-2026.firebasestorage.app',
+    apiKey: 'AIzaSyBj1K-llCuJQLQQnnD8x-PEyMQe6DeGuyk',
+    appId: '1:835122226704:ios:00402e8326ddb22fe30c95',
+    messagingSenderId: '835122226704',
+    projectId: 'event-matching-1c7e1',
+    storageBucket: 'event-matching-1c7e1.firebasestorage.app',
     iosBundleId: 'com.example.day1FlutterBasics',
   );
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDjxMZ8aDldkhJTOayCywzMQQGeQky9xW0',
-    appId: '1:652699892662:web:e43e7bde2e5bb363449f17',
-    messagingSenderId: '652699892662',
-    projectId: 'event-pair-sena-2026',
-    authDomain: 'event-pair-sena-2026.firebaseapp.com',
-    storageBucket: 'event-pair-sena-2026.firebasestorage.app',
+    apiKey: 'AIzaSyC6fwNZc7iKQVHZ70454wq6m9Q4dbkRTRQ',
+    appId: '1:835122226704:web:f8000f081c3332b1e30c95',
+    messagingSenderId: '835122226704',
+    projectId: 'event-matching-1c7e1',
+    authDomain: 'event-matching-1c7e1.firebaseapp.com',
+    storageBucket: 'event-matching-1c7e1.firebasestorage.app',
+    measurementId: 'G-QMNFE1SG9T',
   );
 }
