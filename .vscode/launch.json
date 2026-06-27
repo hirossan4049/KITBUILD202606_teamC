@@ -11,7 +11,7 @@
       "preLaunchTask": "iOS Simulator: Boot iPhone 17 Pro",
       "toolArgs": [
         "--device-timeout",
-        "60"
+        "120"
       ],
       "env": {
         "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"

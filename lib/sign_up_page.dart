@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import 'features/discovery/discovery_page.dart';
+
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
 
@@ -20,6 +22,13 @@ class _SignUpPageState extends State<SignUpPage> {
     // 入力されたパスワードを取得する。
     final password = _passwordController.text;
 
+    if (email.isEmpty || password.isEmpty) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('メールアドレスとパスワードを入力してください')));
+      return;
+    }
+
     try {
       // Firebaseの新規登録が完了するまで待つ。
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
@@ -32,11 +41,13 @@ class _SignUpPageState extends State<SignUpPage> {
         return;
       }
 
-      // 登録に成功したことを画面下部へ表示する。
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('新規登録に成功しました')));
+      // 登録に成功したら、イベントを見つける画面へ進む。
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const DiscoveryPage()),
+      );
     } on FirebaseAuthException catch (error) {
+      debugPrint('FirebaseAuthException: ${error.code} ${error.message}');
+
       // Firebaseのエラーを表示するための初期メッセージ。
       String message = '新規登録に失敗しました';
 
@@ -47,6 +58,14 @@ class _SignUpPageState extends State<SignUpPage> {
         message = 'このメールアドレスは登録済みです';
       } else if (error.code == 'invalid-email') {
         message = 'メールアドレスの形式が正しくありません';
+      } else if (error.code == 'operation-not-allowed') {
+        message = 'Firebaseでメール/パスワード登録が有効になっていません';
+      } else if (error.code == 'configuration-not-found') {
+        message = 'Firebase Authenticationの設定がまだ作成されていません';
+      } else if (error.code == 'network-request-failed') {
+        message = 'ネットワーク接続を確認してください';
+      } else if (error.code == 'too-many-requests') {
+        message = '短時間に何度も試したため一時的に制限されています';
       }
 
       // 登録中に画面が閉じられていた場合は、画面を操作しない。

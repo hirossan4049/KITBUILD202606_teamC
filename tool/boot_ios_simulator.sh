@@ -39,4 +39,20 @@ fi
 /usr/bin/xcrun simctl bootstatus "$device_id" -b >&2
 /usr/bin/open -a Simulator
 
+for attempt in {1..12}; do
+  flutter_devices="$(flutter devices --device-timeout 5 2>&1)"
+
+  if [[ "$flutter_devices" == *"$device_id"* ]]; then
+    break
+  fi
+
+  if [[ "$attempt" -eq 12 ]]; then
+    print -u2 "FlutterがSimulatorを認識できませんでした: $device_id"
+    exit 1
+  fi
+
+  print -u2 "FlutterがSimulatorを認識するまで待機しています... ($attempt/12)"
+  sleep 2
+done
+
 print -r -- "$device_id"
