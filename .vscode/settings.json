@@ -2,6 +2,5 @@
   "dart.env": {
     "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer"
   },
-  "dart.flutterHotReloadOnSave": "all",
-  "dart.previewHotReloadOnSaveWatcher": true
+  "dart.flutterHotReloadOnSave": "all"
 }
